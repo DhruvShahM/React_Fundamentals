@@ -31,25 +31,24 @@ function BookList() {
 
     // </section>
     <section className='booklist'>
-      <Book img={firstBook.img} title={firstBook.title} author={firstBook.author} >
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus sit perferendis rem optio, sunt consequuntur magnam nisi excepturi, itaque fugit error animi architecto alias quasi nihil cupiditate! Nesciunt, maxime quod.</p></Book>
-      <Book img={secondBook.img} title={secondBook.title} />
+      <Book img={firstBook.img} title={firstBook.title} author={firstBook.author} />
+      <Book img={secondBook.img} title={secondBook.title} author={secondBook.author} />
 
     </section>
   );
 }
 
-//props structuring
-const Book = ({img,title,author}) => {
-  // const {img,title,author}=props;
+
+const Book = (props) => {
+  console.log(props);
   return (
     <article className="book">
       <img
-        src={img}
+        src={props.img}
         alt=""
       />
-      <h1>{title}</h1>
-      <h4>{author}</h4>
+      <h1>{props.title}</h1>
+      <h4>{props.author}</h4>
     </article>
   );
 };
