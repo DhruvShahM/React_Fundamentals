@@ -1,30 +1,21 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-
-//CSS
-import './index.css';
-
-
 // Nested Components, React tools
 
 function BookList() {
   return (
-    <section className='booklist'>
+    <section>
       <Book />
       <Book />
       <Book />
-      <Book />
-      <Book />
-      <Book />
-
     </section>
-  );  
+  );
 }
 
 const Book = () => {
   return (
-    <article className="book">
+    <article>
       <Image></Image>
       <Title/>
       <Author/>
