@@ -41,6 +41,7 @@ const Image = () => (
 
 const Title = () => <h1>Valli A NovelValli A NovelValli A Novel</h1>;
 
-const Author = () => <h4>Sheela Tomy, Jayasree Kalathil</h4>;
+// JSX CSS
+const Author = () => <h4 style={{color:'#617d98',fontSize:'0.75rem',marginTop:'0.25rem'}}>Sheela Tomy, Jayasree Kalathil</h4>;
 
 ReactDOM.render(<BookList />, document.getElementById("root"));
