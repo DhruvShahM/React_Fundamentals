@@ -4,7 +4,7 @@ const UseStateArray = () => {
   const [people, setPeople] = React.useState(data);
 
   const removeItem = (id) => {
-    
+
     setPeople((oldPeople) => {
       let newPeople = oldPeople.filter((person) => person.id !== id);
       return newPeople
