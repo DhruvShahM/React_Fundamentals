@@ -1,12 +1,12 @@
 import React from 'react'
-import Final from './tutorial/1-useState/final/3-useState-array'  
-// import Final from './tutorial/1-useState/final/2-useState-basics'
+import Setup from './tutorial/9-custom-hooks/setup/1-fetch-example'    
+// import Final from './tutorial/11-react-router/final/index'
 
 function App() {
   return (
     <div className='container'>
-      <Final/>
       {/* <Final/> */}
+      <Setup/>
     </div>
   )
 }
